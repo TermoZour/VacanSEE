@@ -249,8 +249,8 @@ class JobsFragment : Fragment() {
                                     }
                                 }
                                 c.clipRect(
-                                    15f, viewHolder.itemView.top.toFloat() + 20f,
-                                    dX + 50f, viewHolder.itemView.bottom.toFloat() - 20f
+                                    15f, viewHolder.itemView.top.toFloat() + 26f,
+                                    dX + 50f, viewHolder.itemView.bottom.toFloat() - 26f
                                 )
 
                                 //making the save thingy change color
