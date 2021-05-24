@@ -2,12 +2,20 @@ package com.punchy.pmt.vacansee.searchJobs.detailedJob
 
 import android.content.Context
 import android.os.Bundle
+import android.provider.CalendarContract
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.punchy.pmt.vacansee.searchJobs.httpRequests.FinanceData
 import io.data2viz.charts.chart.*
+import io.data2viz.charts.chart.mark.area
 import io.data2viz.charts.chart.mark.line
+import io.data2viz.charts.core.CursorType
+import io.data2viz.charts.core.PanMode
+import io.data2viz.charts.core.TriggerMode
+import io.data2viz.charts.core.ZoomMode
+import io.data2viz.color.Color
+import io.data2viz.color.Colors
 import io.data2viz.geom.Size
 import io.data2viz.viz.VizContainerView
 
@@ -55,13 +63,28 @@ class FinanceGraph : Fragment() {
             // Create a discrete dimension for the year of the census
             val year = discrete({ domain.date })
 
+            config {
+                events {
+                    triggerMode = TriggerMode.Column
+                    zoomMode = ZoomMode.X
+                    panMode = PanMode.X
+                }
+            }
             // Create a continuous numeric dimension for the population
             val population = quantitative({ domain.sharePrice }) {
                 name = "Price of share"
             }
 
             // Using a discrete dimension for the X-axis and a continuous one for the Y-axis
-            line(year, population)
+            line(year, population){
+
+                strokeColor = discrete( {
+                    if (financeData.getOrNull(indexInData + 1)?.sharePrice ?: Double.NEGATIVE_INFINITY > domain.sharePrice) Colors.Web.mediumseagreen
+                    else Colors.Web.red
+                } )
+
+                strokeWidth = constant(5.0)
+            }
         }
 
         override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
