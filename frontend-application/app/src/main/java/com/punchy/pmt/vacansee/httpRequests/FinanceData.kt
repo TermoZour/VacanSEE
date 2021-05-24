@@ -1,4 +1,4 @@
-package com.punchy.pmt.vacansee.searchJobs.httpRequests
+package com.punchy.pmt.vacansee.httpRequests
 
 class FinanceData (
     val date: String,

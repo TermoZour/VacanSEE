@@ -12,13 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.punchy.pmt.vacansee.R
 import com.punchy.pmt.vacansee.checkWIFI
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.*
-import com.punchy.pmt.vacansee.searchJobs.locationDistanceParam
+import com.punchy.pmt.vacansee.httpRequests.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
-import org.w3c.dom.Text
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

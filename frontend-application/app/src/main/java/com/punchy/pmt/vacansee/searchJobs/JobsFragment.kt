@@ -18,9 +18,9 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.punchy.pmt.vacansee.R
 import com.punchy.pmt.vacansee.checkWIFI
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.Job
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.getJobs
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.saveJob
+import com.punchy.pmt.vacansee.httpRequests.Job
+import com.punchy.pmt.vacansee.httpRequests.getJobs
+import com.punchy.pmt.vacansee.httpRequests.saveJob
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

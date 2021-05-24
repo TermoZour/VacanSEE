@@ -1,6 +1,5 @@
 package com.punchy.pmt.vacansee.searchJobs
 
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.StrictMode
@@ -15,7 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.punchy.pmt.vacansee.R
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.Job
+import com.punchy.pmt.vacansee.httpRequests.Job
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

@@ -2,19 +2,15 @@ package com.punchy.pmt.vacansee.searchJobs.detailedJob
 
 import android.content.Context
 import android.os.Bundle
-import android.provider.CalendarContract
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.FinanceData
+import com.punchy.pmt.vacansee.httpRequests.FinanceData
 import io.data2viz.charts.chart.*
-import io.data2viz.charts.chart.mark.area
 import io.data2viz.charts.chart.mark.line
-import io.data2viz.charts.core.CursorType
 import io.data2viz.charts.core.PanMode
 import io.data2viz.charts.core.TriggerMode
 import io.data2viz.charts.core.ZoomMode
-import io.data2viz.color.Color
 import io.data2viz.color.Colors
 import io.data2viz.geom.Size
 import io.data2viz.viz.VizContainerView

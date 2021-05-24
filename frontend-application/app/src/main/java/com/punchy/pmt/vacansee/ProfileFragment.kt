@@ -21,7 +21,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.punchy.pmt.vacansee.searchJobs.*
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.*
+import com.punchy.pmt.vacansee.httpRequests.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -30,7 +30,7 @@ import java.io.FileNotFoundException
 import java.net.MalformedURLException
 import java.net.URL
 
-//import com.punchy.pmt.vacansee.searchJobs.httpRequests.getSavedJobs
+//import com.punchy.pmt.vacansee.httpRequests.getSavedJobs
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

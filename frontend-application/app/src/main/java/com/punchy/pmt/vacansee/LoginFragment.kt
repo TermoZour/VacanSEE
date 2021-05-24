@@ -10,15 +10,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.login
+import com.punchy.pmt.vacansee.httpRequests.login
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
-import java.io.IOException
 import java.lang.Exception
 
-//import com.punchy.pmt.vacansee.searchJobs.httpRequests.login
+//import com.punchy.pmt.vacansee.httpRequests.login
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

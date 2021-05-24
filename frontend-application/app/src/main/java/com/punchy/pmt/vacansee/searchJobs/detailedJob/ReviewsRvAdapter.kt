@@ -7,8 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.punchy.pmt.vacansee.R
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.ReviewData
-import com.punchy.pmt.vacansee.searchJobs.jobsList
+import com.punchy.pmt.vacansee.httpRequests.ReviewData
 
 class ReviewsRvAdapter(private val reviewsList: MutableList<ReviewData>) :
     RecyclerView.Adapter<ReviewsRvAdapter.ViewHolder>() {

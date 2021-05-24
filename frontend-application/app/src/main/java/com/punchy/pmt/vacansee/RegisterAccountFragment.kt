@@ -11,12 +11,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.Toast
-import com.punchy.pmt.vacansee.searchJobs.httpRequests.registerAccount
+import com.punchy.pmt.vacansee.httpRequests.registerAccount
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 
-//import com.punchy.pmt.vacansee.searchJobs.httpRequests.registerAccount
+//import com.punchy.pmt.vacansee.httpRequests.registerAccount
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
